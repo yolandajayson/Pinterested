@@ -22,7 +22,7 @@
   <% if user_signed_in? %>
         <li><%= link_to 'Add Pin', new_pin_path, class: 'btn btn-dark' %></li>
         <li><%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-dark' %></li>
-        <li><%= botton_to 'Logout', destroy_user_session_path, class: 'btn btn-dark', :method => :delete %></li>
+        <li><%= button_to 'Logout', destroy_user_session_path, class: 'btn btn-dark', :method => :delete %></li>
           
   <% else %>
         <li><%= link_to 'Login', new_user_session_path, class: 'btn btn-dark' %></li>
